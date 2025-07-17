@@ -29,7 +29,8 @@ public class Main {
         String str = "Nícolas";
         boolean bool = false;
 
-        int[] colecaoDeInteiros = {1, 2, 3, 4, 5};
+        int[] colecaoDeInteiros = {1, 2, 3, 4, 5, 3333333};
+        int[] meusNumeros = new int[4];
 
         if (str == "Nícolas") {
             System.out.println("Verdadeiro");
@@ -37,6 +38,6 @@ public class Main {
             System.out.println("Falso");
         }
 
-        System.out.println(colecaoDeInteiros[0]);
+        System.out.println(colecaoDeInteiros[5]);
     }
 }
