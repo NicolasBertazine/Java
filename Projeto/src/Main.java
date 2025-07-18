@@ -1,7 +1,10 @@
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 /*
+        ==== TIPOS PRIMITIVOS ====
+
         numeros inteiros: 100, 21254, 41556, 2, 5
         byte => 8 bits = -128 a 127
         short => 16 bits = -32.768 a 32.767
@@ -17,7 +20,6 @@ public class Main {
         char => representar um unico caractere = a, b, c, d, ''
 
         boolean => true ou false
-*/
 
         byte b = 100;
         short s = 10000;
@@ -29,15 +31,62 @@ public class Main {
         String str = "Nícolas";
         boolean bool = false;
 
-        int[] colecaoDeInteiros = {1, 2, 3, 4, 5, 3333333};
-        int[] meusNumeros = new int[4];
+*/
 
-        if (str == "Nícolas") {
-            System.out.println("Verdadeiro");
-        } else {
-            System.out.println("Falso");
+/*      ==== VETORES E ARRAYS ====
+
+        //                         0, 1, 2, 3, 4, 5
+        int[] colecaoDeInteiros = {1, 2, 3, 4, 5, 3333333};
+        int[] meusNumeros= new int[5];
+
+        String[] nomesArr = new String[10];
+
+        nomesArr[0] = "Nicra";
+        nomesArr[1] = "Terra";
+        nomesArr[2] = "Borsa";
+        nomesArr[7] = "Bolinha";
+
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Nicra");
+        nomes.add("Terra");
+        nomes.add("Borsa");
+        nomes.add("Bolinha");
+
+        System.out.println(nomes.get(0));
+
+        nomes.remove(0);
+        nomes.remove("Terra");
+
+        System.out.println(nomes.get(0));
+
+
+        ==== LOOPS ====
+
+        for (int meuIterador = 0; meuIterador < nomesArr.length; meuIterador++) {
+            System.out.println(nomesArr[meuIterador]);
         }
 
-        System.out.println(colecaoDeInteiros[5]);
+        for (String nome : nomes) {
+            System.out.println(nome);
+        }
+
+        int contador = 0;
+        while(contador < 10){
+            System.out.println("Estou no while");
+            contador++;
+        }
+ */
+//      ==== CASTINGS ENTRE NÚMEROS ====
+        double resultado = 0.0;
+        int resultadoInt = (int) resultado;
+
+        int meuInt = 10;
+        double meuDouble = meuInt;
+
+//      ==== CASTINGS ENTRE PALAVRAS E NÚMEROS ====
+        String meuString = "10";
+        int meuInt2 = Integer.parseInt(meuString);
+
+        String minhaString = String.valueOf(meuInt2);
     }
 }
