@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-/*
-        ==== TIPOS PRIMITIVOS ====
 
+//        ==== TIPOS PRIMITIVOS ====
+/*
         numeros inteiros: 100, 21254, 41556, 2, 5
         byte => 8 bits = -128 a 127
         short => 16 bits = -32.768 a 32.767
@@ -20,6 +20,34 @@ public class Main {
         char => representar um unico caractere = a, b, c, d, ''
 
         boolean => true ou false
+*/
+/*
+        ==== OPERADORES ARITMÉTICOS ====
+
+        + = Adição                  5 + 3 = 8
+        - = Subtração               5 - 3 = 2
+        * = Multiplicação           5 * 3 = 15
+        / = Divisão                 5 / 3 = 2 (Inteira)
+        % = Módulo (resto da div.)  5 % 3 = 1
+
+*/
+/*
+        ==== OPERADORES RELACIONAIS ====
+
+        == = Igual a                5 == 5 = true
+        != = Diferente de           5 != 3 = true
+        >  = Maior que              5 >  3 = true
+        <  = Menor que              5 <  3 = false
+        >= = Maior ou igual a       5 >= 5 = true
+        <= - Menor ou igual a       3 <= 5 = true
+*/
+/*
+        ==== OPERADORES LÓGICOS ====
+
+        && = E lógico (AND)         true && false = false (os dois devem ser true)
+        || = OU lógico (OR)         true || false = true (um deve ser true)
+        !  = Negação (NOT)          !true         = false (inverte o valor)
+*/
 
         byte b = 100;
         short s = 10000;
@@ -31,9 +59,7 @@ public class Main {
         String str = "Nícolas";
         boolean bool = false;
 
-*/
-
-/*      ==== VETORES E ARRAYS ====
+//      ==== VETORES E ARRAYS ====
 
         //                         0, 1, 2, 3, 4, 5
         int[] colecaoDeInteiros = {1, 2, 3, 4, 5, 3333333};
@@ -60,7 +86,7 @@ public class Main {
         System.out.println(nomes.get(0));
 
 
-        ==== LOOPS ====
+//      ==== LOOPS ====
 
         for (int meuIterador = 0; meuIterador < nomesArr.length; meuIterador++) {
             System.out.println(nomesArr[meuIterador]);
@@ -75,7 +101,7 @@ public class Main {
             System.out.println("Estou no while");
             contador++;
         }
- */
+
 //      ==== CASTINGS ENTRE NÚMEROS ====
         double resultado = 0.0;
         int resultadoInt = (int) resultado;
