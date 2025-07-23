@@ -7,6 +7,8 @@ public class Main {
         c1.status();
         Caneta c2 = new Caneta("Bic", "Azul", 0.5f);
         c2.status();
+        c1.setPonta(0.6f);
+        c1.status();
     }
 
 }
